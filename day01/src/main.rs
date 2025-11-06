@@ -64,7 +64,7 @@ mod tests {
     }
 
     #[test]
-    fn get_part2_example() {
+    fn test_get_part2_example() {
         let example = [
             "two1nine",
             "eightwothree",
