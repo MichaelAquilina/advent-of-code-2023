@@ -33,13 +33,7 @@ mod test {
 
     #[test]
     fn test_corner_case() -> Result<(), Box<dyn Error>> {
-        let example = [
-            "12..+..",
-            "..34...",
-            "..@56..",
-            "78.....",
-            ".......",
-        ].join("\n");
+        let example = ["12..+..", "..34...", "..@56..", "78.....", "......."].join("\n");
 
         let schematic: Schematic = example.parse()?;
         let result = get_part1(&schematic);

@@ -40,11 +40,7 @@ impl Schematic {
                 neighbors.push(Point { x, y: y + 1 });
             }
             let x = x + (length as i32);
-            neighbors.extend([
-                Point { x, y: y - 1 },
-                Point { x, y },
-                Point { x, y: y + 1 },
-            ])
+            neighbors.extend([Point { x, y: y - 1 }, Point { x, y }, Point { x, y: y + 1 }])
         }
 
         neighbors
